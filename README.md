@@ -10,6 +10,5 @@ e conhecer as tags: `<font>`, `<del>`, `<p>`, `<abbr>`
 
 ## Referências
 
-[w3schools](https://www.w3schools.com/html/default.asp).
-
-[TechOnTheNet](https://www.techonthenet.com/html/).
+1. [w3schools](https://www.w3schools.com/html/default.asp).
+2. [TechOnTheNet](https://www.techonthenet.com/html/).
