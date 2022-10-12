@@ -1,62 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <h2 id="indice">Índice</h2>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+      <li>
+        <a href="#history">História dos computadores</a>
+        <ul>
+          <li><a href="#first">1º Geração</a></li>
+          <li><a href="#second">2º Geração</a></li>
+          <li><a href="#third">3º Geração</a></li>
+          <li><a href="#fourth">4º Geração</a></li>
+          <li><a href="#future">5º Geração</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#comunication">Comunicação Client x Server</a>
+        <ul>
+          <li><a href="#internet">Surgimento da Internet</a></li>
+          <li><a href="#clientServer">Arquitetura Client x Server</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#html">HTML na Prática</a>
+        <ul>
+          <li><a href="#basic">Estrutura Básica</a></li>
+          <li><a href="#lists">Listas</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </li>
+      <li><a href="#links">Links de referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="history">História dos computadores</h2>
+    <p>
+      O computador, tal qual conhecemos hoje, passou por diversas transformações
+      e foi se aperfeiçoando ao longo do tempo.
+    </p>
+    <p>
+      A história do computador pode ser divida, até o momento, em cinco
+      gerações:
+    </p>
+    <h3 id="first">1º Geração <i>(1946 - 1956)</i></h3>
+    <ul>
+      <li>Tinha como principal característica o uso de válvulas eletrônicas</li>
+      <li>
+        Possuiam o uso restrito, além de serem imensos e consumirem muita
+        energia
+      </li>
+      <li>
+        Em 1946 ocorreu o lançamento do
+        <abbr title="Electrical Numerical Integrator and Calculator"
+          ><u>ENIAC</u></abbr
+        >
+        Sua principal inovação foi a computação digital, ou seja, a entrada de
+        dados era realizada no painel de controle e cada operação podia ser
+        acessada através de configurações-padrão de chaves e switches.
+        <br><br>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <div>
+          <img
+          alt="ENIAC"
+          data-attachment-id="1898"
+          data-permalink="https://kids.pplware.sapo.pt/historias/computadores-uma-historia/attachment/imagem_histpc12_small/"
+          data-orig-file="https://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc12_small.jpg"
+          data-orig-size="413,300"
+          data-comments-opened="1"
+          data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":""}'
+          data-image-title="imagem_histpc12_small"
+          data-image-description=""
+          data-medium-file="https://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc12_small.jpg"
+          data-large-file="https://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc12_small.jpg"
+          src="http://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc12_small.jpg"
+          width="413"
+          height="300"
+          class="aligncenter size-full wp-image-1898"
+          srcset="
+            https://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc12_small.jpg         413w,
+            https://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc12_small-150x108.jpg 150w
+          "
+          sizes="(max-width: 413px) 100vw, 413px"
+        />
+        <br><strong>ENIAC - Electrical Numerical Integrator and Calculator</strong><br>
+        </div>
+      </li>
+    </ul>
+    <h3 id="second">2º Geração <i>(1957 - 1964)</i></h3>
+    <ul>
+      <li>Tinha como principal característica o uso de <strong>transistores</strong></li>
+      <li>
+        Em janeiro de 1959 a <strong>Texas Instruments</strong> anuncia ao mundo
+        uma criação de Jack Kilby: o <strong>circuito integrado</strong>.
+      </li>
+    </ul>
+    <h3 id="third">3º Geração <i>(1965 - 1970)</i></h3>
+    <ul>
+      <li>
+        Caracterizada pela introdução dos
+        <strong>circuitos integrados</strong>
+      </li>
+      <li>Criação de <strong>mini-computadores</strong></li>
+      <li>
+        Surgem conceitos como memória virtual, multiprogramação e sistemas
+        operacionais complexos
+      </li>
+    </ul>
+    <h3 id="fourth">4º Geração <i>(1971 - ao momento)</i></h3>
+    <ul>
+      <li>
+        Caracterizada pela introdução dos <strong>microprocessadores</strong>
+        <br><br>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <div>
+          <img
+          data-attachment-id="1904"
+          data-permalink="https://kids.pplware.sapo.pt/historias/computadores-uma-historia/attachment/imagem_histpc18_small/"
+          data-orig-file="https://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc18_small.jpg"
+          data-orig-size="350,226"
+          data-comments-opened="1"
+          data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":""}'
+          data-image-title="imagem_histpc18_small"
+          data-image-description=""
+          data-medium-file="https://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc18_small.jpg"
+          data-large-file="https://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc18_small.jpg"
+          src="http://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc18_small.jpg"
+          alt="imagem_histpc18_small"
+          width="350"
+          height="226"
+          class="aligncenter size-full wp-image-1904"
+          srcset="
+            https://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc18_small.jpg        350w,
+            https://kids.pplware.sapo.pt/wp-content/uploads/2013/06/imagem_histpc18_small-150x96.jpg 150w
+          "
+          sizes="(max-width: 350px) 100vw, 350px"
+        />
+        </div>
+      </li>
+      <li>Desenvolvimento dos <strong>computadores pessoais</strong></li>
+    </ul>
+    <h3 id="future">5º Geração <i>(o presente e o futuro)</i></h3>
+    <ul>
+      <li>
+        Baseia-se principalmente na
+        <strong><i>inteligência artificial</i></strong> e seus diversos ramos:
+        <ul>
+          <li>Redes Neurais</li>
+          <li>Sistemas Inteligentes</li>
+          <li>Reconhecimento de Voz</li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      <a href="#indice"><h5>Voltar para o índice</h5></a>
+    </p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="comunication">Comunicação <i>Client x Server</i></h2>
+    <h3 id="internet">Surgimento da <i>Internet</i></h3>
+      <p>
+        A <strong>Internet</strong> surgiu a partir de pesquisas militares no auge da <a href="https://rockcontent.com/br/blog/historia-da-internet/" target="_blank" title="Página História da Internet">Guerra Fria</a>.
+      </p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h3 id="clientServer">Arquitetura Client x Server</h3>      
+      <p>A comunicação na <strong>Internet</strong> é baseada no modelo cliente-servidor que faz uso de protocolos de comunicação do tipo requisição/resposta.</p>
+      <p>É o <i>Client/Cliente</i> quem sempre inicia a comunicação com o servidor e seu representante mais conhecido é o navegador</p>
+      <p>O papel do <i>Server/Servidor</i> é receber uma requisição e devolver uma resposta para o cliente.</p>
+      <br><br>
+
+      <div>
+        <img alt="Comunicação entre o usuário e o servidor através da internet" src="//arquivo.devmedia.com.br/devcast/requisicao_40115/img/comunicacao.png">
+      </div>
+      <br>
+      
+      <p>Nos servidores podem ser hospedados documentos, imagens, áudio, vídeo, etc., assim como, programas que atendem as requisições dos clientes e as processam.</p>
+      <p>Existem diversos tipos de servidores para atender as requisições do cliente.</p>
+      <p>São exemplos de tipos de servidores:
+         <ul>
+           <li>Arquivos</li>
+           <li>Segurança (Firewall)</li>
+           <li>Streaming</li>
+           <li>E-mail</li>
+           <li>Web</li>
+         </ul>
+      </p>
+      <p>Os servidores possuem hardwares e softwares voltados para atender as requisições e <strong>servidores Web</strong> geralmente são capazes que executar aplicações em linguagens como <u>PHP</u>, <u>Ruby</u>, <u>JS</u>, <u>Java</u>, <u>C#</u>, dentre outras.</p>
+      <p>A linguagem <strong><i><u>JavaScript</u></i></strong> pode ser executada tanto no lado do cliente quanto do lado do servidor.</p>
+      <p>No lado cliente, o <strong><i><u>JavaScript</u></i></strong> é executado pelo navegador. Para execução e interpretação de JavaScript, geralmente o navegador utiliza o módulo <a href="https://v8.dev" target="_blank" title="Página do módulo v8"><i><u>v8</u></i></a></p>
+      <p>No lado servidor, o <strong><i><u>JavaScript</u></i></strong> é executado pelo <i><u><a href="https://nodejs.org" target="_blank" title="Página do NodeJS">Node.js</a></u></i></p>
+    </h3>
+    <p>
+      <a href="#indice"><h5>Voltar para o índice</h5></a>
+    </p>
+
+    <h2 id="html">HTML na Prática</h2>
+    <h3 id="basics">Estrutura Básica</h3>
+    <p>Por convenção, a página inicial de um projeto HTML é a página <i>index.html</i>.</p>
+    <p>A estrutura básica de uma página HTML é composta pelas tags:
+      <ul>
+        <li><a href="https://www.w3schools.com/tags/tag_html.asp" target="_blank">html</a></li>
+        <li><a href="https://www.w3schools.com/tags/tag_head.asp" target="_blank">head</a></li>
+        <li><a href="https://www.w3schools.com/tags/tag_body.asp" target="_blank">body</a></li>
+      </ul>
+    </p>
+
+    <h3 id="listas">Listas</h3>
+    <p>Listas são muito utilizadas quando queremos listar itens no site e também para a criação de menus de navegação.</p>
+    <p>No HTML temos três tipos de listas:
+      <ul>
+        <li>Listas Ordenadas</li>
+        <p>Utiliza a tag <strong><<strong>ol</strong>></strong> e os respectivos itens da lista ficam dentro da tag <strong><<strong>li</strong>></strong>.</p>
+        <p>Por padrão são apresentadas no navegador ordenadas por números, podendo alterar este tipo da marcação utilizando-se o atributo <i>type</i></p>
+        <br>
+  
+
+        <li>Listas Não-Ordenadas</li>
+        <p>Utiliza a tag <strong><<strong>ul</strong>></strong> e os respectivos itens da lista também ficam dentro da tag <strong><<strong>li</strong>></strong>.</p>
+        <p>Por padrão são representadas no navegador por "bullets", podendo alterar este tipo da marcação via CSS.</p>
+        <br>
+    
+        <li>Listas de Definições</li>
+        <p>As listas de definições são representadas pela tag <strong><<strong>dl</strong>></strong>, e cada termo da lista de definição é representado pelo par de tags <strong><<strong>dt</strong>></strong> e <strong><<strong>dd</strong>></strong></p>
+      </ul>
+    </p>
+
+    <h3 id="links">Links</h3>
+    <p>A tag <strong><<strong>a</strong>></strong> define um hiperlink, que é usado para vincular uma página a outra.</p>
+    <p>O atributo mais importante da tag <strong><<strong>a</strong>></strong> é o atributo <strong><i>href</i></strong>, que indica o destino do link.</p>
+    <p>Outros atributos relevantes da tag <strong><<strong>a</strong>></strong> são o atributo <strong><i>target</i></strong> que indica se o link será exibido na janela atual do navegador (padrão) ou se será apresentado em outra aba e o atributo <strong><i>title</i></strong> que representa um tooltip do link</p> 
+    <p>
+      <a href="#indice"><h5>Voltar para o índice</h5></a>
+    </p>
 
     <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+      <li>
+        <a href="http://dio.me" target="_blank" title="Página Oficial da Dio.me">Digital Innovation One</a>
+      </li>
+      <li><a href="https://www.w3.org/" target="_blank" title="Página Oficial do World Wide Web Consortium">w3c</a></li>
+      <li>
+        <a
+          href="https://kids.pplware.sapo.pt/historias/computadores-uma-historia/"
+          target="_blank"
+          title="Página contendo a história dos computadores"
+          >A História dos Computadores</a
+        >
+      </li>
+      <li>
+        <a
+        href="https://rockcontent.com/br/blog/historia-da-internet/"
+        target="_blank"
+        >A História da Internet</a>
+      </li>
+      <li>
+        <a
+        href="https://www.w3schools.com/html/default.asp"
+        target="_blank"
+        title="w3Schools - HTML Tutorial"
+        >w3Schools - HTML Tutorial</a>
+      </li>
     </ul>
-
-</body>
+  </body>
 </html>
